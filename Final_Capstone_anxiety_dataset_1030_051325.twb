@@ -1,0 +1,2454 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <Heatmap />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Anxiety_Dataset after SQL' inline='true' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Anxiety_Dataset after SQL' name='textscan.0l8xmad08h92ee19cl5dn1ss9fbe'>
+            <connection class='textscan' directory='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets' filename='Anxiety_Dataset after SQL.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0l8xmad08h92ee19cl5dn1ss9fbe' name='Anxiety_Dataset after SQL.csv' table='[Anxiety_Dataset after SQL#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Age' ordinal='0' />
+            <column datatype='string' name='Gender' ordinal='1' />
+            <column datatype='string' name='Occupation' ordinal='2' />
+            <column datatype='real' name='Sleep Hours' ordinal='3' />
+            <column datatype='real' name='Physical Activity (hrs/week)' ordinal='4' />
+            <column datatype='integer' name='Caffeine Intake (mg/day)' ordinal='5' />
+            <column datatype='integer' name='Alcohol Consumption (drinks/week)' ordinal='6' />
+            <column datatype='string' name='Smoking' ordinal='7' />
+            <column datatype='string' name='Family History of Anxiety' ordinal='8' />
+            <column datatype='integer' name='Stress Level' ordinal='9' />
+            <column datatype='integer' name='Heart Rate (bpm)' ordinal='10' />
+            <column datatype='integer' name='Breathing Rate (breaths/min)' ordinal='11' />
+            <column datatype='integer' name='Sweating Level' ordinal='12' />
+            <column datatype='string' name='Dizziness' ordinal='13' />
+            <column datatype='string' name='Medication' ordinal='14' />
+            <column datatype='integer' name='Therapy Sessions (per month)' ordinal='15' />
+            <column datatype='string' name='Recent Major Life Event' ordinal='16' />
+            <column datatype='integer' name='Diet Quality' ordinal='17' />
+            <column datatype='integer' name='Anxiety Level' ordinal='18' />
+            <column datatype='string' name='High_Risk' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sleep Hours</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sleep Hours]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Sleep Hours</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Physical Activity (hrs/week)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Physical Activity (hrs/week)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Physical Activity (hrs/week)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Caffeine Intake (mg/day)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Caffeine Intake (mg/day)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Caffeine Intake (mg/day)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Alcohol Consumption (drinks/week)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Alcohol Consumption (drinks/week)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Alcohol Consumption (drinks/week)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Smoking</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Smoking]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Smoking</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family History of Anxiety</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Family History of Anxiety]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Family History of Anxiety</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stress Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Stress Level]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Stress Level</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Heart Rate (bpm)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Heart Rate (bpm)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Heart Rate (bpm)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Breathing Rate (breaths/min)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Breathing Rate (breaths/min)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Breathing Rate (breaths/min)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sweating Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sweating Level]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Sweating Level</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dizziness</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Dizziness]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Dizziness</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Medication</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Medication]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Medication</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Therapy Sessions (per month)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Therapy Sessions (per month)]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Therapy Sessions (per month)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recent Major Life Event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Recent Major Life Event]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Recent Major Life Event</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Diet Quality</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Diet Quality]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Diet Quality</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Anxiety Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Anxiety Level]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>Anxiety Level</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High_Risk</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[High_Risk]</local-name>
+            <parent-name>[Anxiety_Dataset after SQL.csv]</parent-name>
+            <remote-alias>High_Risk</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Alcohol Consumption (drinks/week)]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Caffeine Intake (mg/day)]' role='measure' type='quantitative' />
+      <column caption='Smoking Measure' datatype='integer' name='[Calculation_329888681978441728]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Smoking] = &quot;Yes&quot; Then 1&#13;&#10;    ELSE 0 END' />
+      </column>
+      <column datatype='integer' default-format='n#,##0;-#,##0' name='[Diet Quality]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='High Risk' datatype='string' name='[High_Risk]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Medication]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Smoking]' role='dimension' type='nominal' />
+      <column caption='Anxiety_Dataset after SQL.csv' datatype='table' name='[__tableau_internal_object_id__].[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]' role='measure' type='quantitative' />
+      <column-instance column='[Gender]' derivation='Attribute' name='[attr:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[High_Risk]' derivation='None' name='[none:High_Risk:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Medication]' derivation='None' name='[none:Medication:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Smoking]' derivation='None' name='[none:Smoking:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ncled/OneDrive/Documents/My Tableau Repository/Datasources/#TableauTemp_10p1thr0l74um617e17jq183j7n1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/13/2025 02:09:14 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Occupation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Occupation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Occupation</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sleep Hours</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sleep Hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sleep Hours</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Physical Activity (hrs/week)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Physical Activity (hrs/week)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Physical Activity (hrs/week)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Caffeine Intake (mg/day)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Caffeine Intake (mg/day)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Caffeine Intake (mg/day)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>870</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Alcohol Consumption (drinks/week)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Alcohol Consumption (drinks/week)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Alcohol Consumption (drinks/week)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Smoking</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Smoking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Smoking</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family History of Anxiety</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Family History of Anxiety]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Family History of Anxiety</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Stress Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Stress Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stress Level</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Heart Rate (bpm)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Heart Rate (bpm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Heart Rate (bpm)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Breathing Rate (breaths/min)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Breathing Rate (breaths/min)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Breathing Rate (breaths/min)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sweating Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sweating Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sweating Level</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dizziness</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Dizziness]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dizziness</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Medication</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Medication]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Medication</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Therapy Sessions (per month)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Therapy Sessions (per month)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Therapy Sessions (per month)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Recent Major Life Event</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Recent Major Life Event]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Recent Major Life Event</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Diet Quality</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Diet Quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Diet Quality</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Anxiety Level</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Anxiety Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Anxiety Level</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>High_Risk</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[High_Risk]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>High_Risk</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Anxiety_Dataset after SQL.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Medication:nk]' type='palette'>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[attr:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:High_Risk:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Smoking:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Age' />
+        <field-sort-custom-order field='Gender' />
+        <field-sort-custom-order field='Occupation' />
+        <field-sort-custom-order field='Sleep Hours' />
+        <field-sort-custom-order field='Physical Activity (hrs/week)' />
+        <field-sort-custom-order field='Caffeine Intake (mg/day)' />
+        <field-sort-custom-order field='Alcohol Consumption (drinks/week)' />
+        <field-sort-custom-order field='Smoking' />
+        <field-sort-custom-order field='Calculation_329888681978441728' />
+        <field-sort-custom-order field='Family History of Anxiety' />
+        <field-sort-custom-order field='Stress Level' />
+        <field-sort-custom-order field='Heart Rate (bpm)' />
+        <field-sort-custom-order field='Breathing Rate (breaths/min)' />
+        <field-sort-custom-order field='Sweating Level' />
+        <field-sort-custom-order field='Dizziness' />
+        <field-sort-custom-order field='Medication' />
+        <field-sort-custom-order field='Therapy Sessions (per month)' />
+        <field-sort-custom-order field='Recent Major Life Event' />
+        <field-sort-custom-order field='Diet Quality' />
+        <field-sort-custom-order field='Anxiety Level' />
+        <field-sort-custom-order field='High_Risk' />
+        <field-sort-custom-order field='Forecast Indicator' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Anxiety_Dataset after SQL.csv' id='Anxiety_Dataset after SQL.csv_6893FEB05DD64001BF564AD87408706E'>
+            <properties context=''>
+              <relation connection='textscan.0l8xmad08h92ee19cl5dn1ss9fbe' name='Anxiety_Dataset after SQL.csv' table='[Anxiety_Dataset after SQL#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Age' ordinal='0' />
+                  <column datatype='string' name='Gender' ordinal='1' />
+                  <column datatype='string' name='Occupation' ordinal='2' />
+                  <column datatype='real' name='Sleep Hours' ordinal='3' />
+                  <column datatype='real' name='Physical Activity (hrs/week)' ordinal='4' />
+                  <column datatype='integer' name='Caffeine Intake (mg/day)' ordinal='5' />
+                  <column datatype='integer' name='Alcohol Consumption (drinks/week)' ordinal='6' />
+                  <column datatype='string' name='Smoking' ordinal='7' />
+                  <column datatype='string' name='Family History of Anxiety' ordinal='8' />
+                  <column datatype='integer' name='Stress Level' ordinal='9' />
+                  <column datatype='integer' name='Heart Rate (bpm)' ordinal='10' />
+                  <column datatype='integer' name='Breathing Rate (breaths/min)' ordinal='11' />
+                  <column datatype='integer' name='Sweating Level' ordinal='12' />
+                  <column datatype='string' name='Dizziness' ordinal='13' />
+                  <column datatype='string' name='Medication' ordinal='14' />
+                  <column datatype='integer' name='Therapy Sessions (per month)' ordinal='15' />
+                  <column datatype='string' name='Recent Major Life Event' ordinal='16' />
+                  <column datatype='integer' name='Diet Quality' ordinal='17' />
+                  <column datatype='integer' name='Anxiety Level' ordinal='18' />
+                  <column datatype='string' name='High_Risk' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age &amp; Anxiety with Gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold'>Anxiety &amp; Age with Gender</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column-instance column='[Anxiety Level]' derivation='Avg' name='[avg:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age]' derivation='None' name='[none:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#000000' />
+            <format attr='color' data-class='total' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='#b4b4b4' />
+            <format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Age:qk]' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Age:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Age:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='#000000' />
+            <format attr='text-decoration' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='none' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='12' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Age:qk]' value='12' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' id='legend-color' value='#000000' />
+            <format attr='background-color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' id='legend-color' value='bold' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' id='legend-color' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' value='Gender'>
+              <formatted-text>
+                <run>Gender</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Age:qk]</cols>
+      </table>
+      <simple-id uuid='{E7769E25-EBDF-41F4-8AEF-9EE925F63821}' />
+    </worksheet>
+    <worksheet name='Alcohol and Anxiety with Smoking'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold'>Alcohol and Anxiety with Smoking</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Alcohol Consumption (drinks/week)]' role='measure' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Smoking]' role='dimension' type='nominal' />
+            <column-instance column='[Alcohol Consumption (drinks/week)]' derivation='Avg' name='[avg:Alcohol Consumption (drinks/week):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Smoking]' derivation='None' name='[none:Smoking:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Alcohol Consumption (drinks/week):qk]' value='12' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Alcohol Consumption (drinks/week):qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Alcohol Consumption (drinks/week):qk]' value='bold' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Smoking:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Alcohol Consumption (drinks/week):qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]</cols>
+      </table>
+      <simple-id uuid='{83A85C56-7976-4A14-991F-96F510E12E84}' />
+    </worksheet>
+    <worksheet name='Diet &amp; Anxiety'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>Diet &amp; Anxiety</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Diet Quality]' role='measure' type='quantitative' />
+            <column-instance column='[Diet Quality]' derivation='Avg' name='[avg:Diet Quality:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='Count' name='[cnt:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Diet Quality]' derivation='None' name='[none:Diet Quality:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Diet Quality:qk]' num-steps='4' palette='red_green_diverging_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Diet Quality:qk]' num-steps='4' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Diet Quality:qk]' id='legend-color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Diet Quality:qk]' id='legend-color' value='#000000' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Diet Quality:qk]' />
+              <tooltip column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Diet Quality:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='density-kernel-size' value='4.0442090034484863' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]</cols>
+      </table>
+      <simple-id uuid='{C2BC11EC-7989-4FD6-8281-9FF8771694D3}' />
+    </worksheet>
+    <worksheet name='Family History &amp; Anxiety'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>Family History &amp; Anxiety</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Family History of Anxiety]' role='dimension' type='nominal' />
+            <column-instance column='[Anxiety Level]' derivation='Count' name='[cnt:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Family History of Anxiety]' derivation='None' name='[none:Family History of Anxiety:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Family History of Anxiety:nk]' value='176' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Family History of Anxiety:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Family History of Anxiety:nk]' value='bold' />
+            <format attr='font-family' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Family History of Anxiety:nk]' value='Tableau Bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='bold' />
+            <format attr='font-family' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]' value='Tableau Bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' max='10' min='1' num-steps='4' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Family History of Anxiety:nk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[cnt:Anxiety Level:qk]</cols>
+      </table>
+      <simple-id uuid='{38FF415F-2EEA-450A-82E3-3FCAF524064B}' />
+    </worksheet>
+    <worksheet name='HR/BR &amp; Anxiety'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>HR/BR &amp; Anxiety</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Breathing Rate (breaths/min)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Heart Rate (bpm)]' role='measure' type='quantitative' />
+            <column-instance column='[Breathing Rate (breaths/min)]' derivation='Avg' name='[avg:Breathing Rate (breaths/min):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Heart Rate (bpm)]' derivation='Avg' name='[avg:Heart Rate (bpm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Heart Rate (bpm):qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Heart Rate (bpm):qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Heart Rate (bpm):qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk]' num-steps='4' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Heart Rate (bpm):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]</rows>
+        <cols>([federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Heart Rate (bpm):qk] + [federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Breathing Rate (breaths/min):qk])</cols>
+      </table>
+      <simple-id uuid='{9ED82765-3DBD-4C29-9D9E-EA3DF06E7FD5}' />
+    </worksheet>
+    <worksheet name='Physical Activity &amp; Anxiety'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>Physical Activity &amp; Anxiety</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Physical Activity (hrs/week)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep Hours]' role='measure' type='quantitative' />
+            <column-instance column='[Sleep Hours]' derivation='Avg' name='[avg:Sleep Hours:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Physical Activity (hrs/week)]' derivation='None' name='[none:Physical Activity (hrs/week):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Physical Activity (hrs/week):qk]' value='#b4b4b4' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Physical Activity (hrs/week):qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Physical Activity (hrs/week):qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Physical Activity (hrs/week):qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <tooltip column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Sleep Hours:qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Physical Activity (hrs/week):qk]</cols>
+      </table>
+      <simple-id uuid='{020477F3-ED47-4B14-87F9-C064BC489F02}' />
+    </worksheet>
+    <worksheet name='Sleep &amp; Anxiety with Caffeine'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>Sleep &amp; Anxiety with Caffeine</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Caffeine Intake (mg/day)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sleep Hours]' role='measure' type='quantitative' />
+            <column-instance column='[Caffeine Intake (mg/day)]' derivation='Avg' name='[avg:Caffeine Intake (mg/day):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='None' name='[none:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sleep Hours]' derivation='None' name='[none:Sleep Hours:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Sleep Hours:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Sleep Hours:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Sleep Hours:qk]' value='12' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='12' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Sleep Hours:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Caffeine Intake (mg/day):qk]' num-steps='4' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend'>
+            <_.fcp.IndividualControlFormatting.true...format attr='background-color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='#000000' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <_.fcp.IndividualControlFormatting.true...style-rule element='legend-title'>
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' id='legend-color' value='bold' />
+          </_.fcp.IndividualControlFormatting.true...style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-family' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' value='Tableau Bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Caffeine Intake (mg/day):qk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Sleep Hours:qk]</cols>
+      </table>
+      <simple-id uuid='{5B8AACAE-1941-478F-BB41-FFC0E97869A3}' />
+    </worksheet>
+    <worksheet name='Therapy Sessions &amp; Anxiety'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold'>Therapy Sessions &amp; Anxiety</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Anxiety_Dataset after SQL' name='federated.1cdkv7n1pv3u8f177m4pi0etdl3p' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cdkv7n1pv3u8f177m4pi0etdl3p'>
+            <column datatype='integer' default-format='n#,##0;-#,##0' name='[Anxiety Level]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Therapy Sessions (per month)]' role='measure' type='quantitative' />
+            <column-instance column='[Anxiety Level]' derivation='Avg' name='[avg:Anxiety Level:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Therapy Sessions (per month)]' derivation='None' name='[none:Therapy Sessions (per month):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Therapy Sessions (per month):qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Therapy Sessions (per month):qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Therapy Sessions (per month):qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='12' />
+            <format attr='font-weight' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='bold' />
+            <format attr='color' field='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#b4b4b4' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+          </pane>
+        </panes>
+        <rows>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Therapy Sessions (per month):qk]</rows>
+        <cols>[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Anxiety Level:qk]</cols>
+      </table>
+      <simple-id uuid='{08C0B7BC-6096-4753-8160-70AFDA525EE4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard Project Picture'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='105324' id='3' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/Anxiety image.png' type-v2='bitmap' w='94128' x='5872' y='-116'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#faf5f0' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='19' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='280' h='105324' id='3' is-fixed='true' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/Anxiety image.png' type-v2='bitmap' w='94128' x='5872' y='-116'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#faf5f0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FF3A1B09-46EB-4163-B811-6D453CA1499E}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard SS 1, 2, 3'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49065' id='3' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Excel SS.PNG' type-v2='bitmap' w='99064' x='468' y='935'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49065' id='5' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 1.PNG' type-v2='bitmap' w='59745' x='468' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24528' id='6' is-centered='0' type-v2='bitmap' w='39319' x='60213' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24537' id='7' is-centered='0' type-v2='bitmap' w='39319' x='60213' y='74528'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='52083' id='8' is-centered='0' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 2.PNG' type-v2='bitmap' w='56141' x='60276' y='49306' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='27' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='280' h='49065' id='3' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Excel SS.PNG' type-v2='bitmap' w='99064' x='468' y='935'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52083' id='8' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 2.PNG' type-v2='bitmap' w='56141' x='60276' y='49306'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49065' id='5' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 1.PNG' type-v2='bitmap' w='59745' x='468' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='188' h='24528' id='6' is-centered='0' is-fixed='true' type-v2='bitmap' w='39319' x='60213' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24537' id='7' is-centered='0' is-fixed='true' type-v2='bitmap' w='39319' x='60213' y='74528'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C04990FD-D437-4F4B-8C24-0C657214746C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard SS 4,5,6,7,8'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='47801' id='5' is-centered='0' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 3.PNG' type-v2='bitmap' w='34991' x='839' y='2662' />
+        <zone h='43287' id='6' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 1.PNG' type-v2='bitmap' w='36549' x='779' y='53009' />
+        <zone h='29514' id='7' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 2.PNG' type-v2='bitmap' w='35351' x='42241' y='1620' />
+        <zone h='32292' id='8' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 3.PNG' type-v2='bitmap' w='35530' x='42181' y='31366' />
+        <zone h='34028' id='9' is-centered='0' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 4.PNG' type-v2='bitmap' w='35530' x='42181' y='63889' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='28' param='vert' type-v2='layout-flow' w='99064' x='468' y='935'>
+                <zone fixed-size='236' h='29514' id='7' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 2.PNG' type-v2='bitmap' w='35351' x='42241' y='1620'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47801' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/Python SS 3.PNG' type-v2='bitmap' w='34991' x='839' y='2662'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='32292' id='8' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 3.PNG' type-v2='bitmap' w='35530' x='42181' y='31366'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43287' id='6' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 1.PNG' type-v2='bitmap' w='36549' x='779' y='53009'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='272' h='34028' id='9' is-centered='0' is-fixed='true' param='C:/Users/ncled/code/SavvyCoders/Capstone/Final Capstone Datasets/SS Snips/SQL SS 4.PNG' type-v2='bitmap' w='35530' x='42181' y='63889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DB29136A-379A-440C-A7C0-1EA9F466D14C}' />
+    </dashboard>
+    <dashboard name='My Very 1st Story:)' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='24'>An Outlook on Anxiety-What does the Data Say?</run>
+            <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='24'>Æ </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+        <style-rule element='story-description'>
+          <format attr='background-color' id='story-description_6' value='#000000d9' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='1' param='vert' removable='false' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='4790' id='3' type-v2='title' w='99064' x='468' y='935' />
+            <zone h='11799' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99064' x='468' y='5725' />
+            <zone h='81541' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99064' x='468' y='17524'>
+              <flipboard active-id='10' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='An Outlook on Anxiety-What does the Data Say?' captured-sheet='Dashboard Project Picture' id='3' />
+                  <story-point caption='Screenshots 1-Excel, 2-Python, 3-Python' captured-sheet='Dashboard SS 1, 2, 3' id='2' />
+                  <story-point caption='Screensshots 4-Python, 5-8 SQL' captured-sheet='Dashboard SS 4,5,6,7,8' id='4' />
+                  <story-point caption='Age &amp; Anxiety with Gender' captured-sheet='Age &amp; Anxiety with Gender' id='5' />
+                  <story-point caption='Family History &amp; Anxiety' captured-sheet='Family History &amp; Anxiety' id='6' />
+                  <story-point caption='Sleep &amp; Anxiety with Caffeine' captured-sheet='Sleep &amp; Anxiety with Caffeine' id='7' />
+                  <story-point caption='Physical Activity &amp; Anxiety' captured-sheet='Physical Activity &amp; Anxiety' id='8' />
+                  <story-point caption='Diet &amp; Anxiety' captured-sheet='Diet &amp; Anxiety' id='9' />
+                  <story-point caption='HR/BR &amp; Anxiety' captured-sheet='HR/BR &amp; Anxiety' id='10' />
+                  <story-point caption='Alcohol and Anxiety with Smoking' captured-sheet='Alcohol and Anxiety with Smoking' id='11' />
+                  <story-point caption='Alcohol and Anxiety with Smoking' captured-sheet='Therapy Sessions &amp; Anxiety' id='12' />
+                  <story-point caption='Thank You!!!' captured-sheet='' id='13' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='13201' hidden='true' id='6' story-point-id='13' type-v2='text' w='77036' x='12127' y='27570'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#aaffff' fontname='Benton Sans Book' fontsize='16'>Thank you for your time today, and a heartfelt thank you to the incredible staff at Savvy Coders. Every member of the faculty truly cares, and that care shines through in every single interaction.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{F8603BC1-4A3D-4337-A7E8-30861B352B80}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='My Very 1st Story:)' tab-color='#4f779a'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{2A4B2B85-F241-4CBB-9DC9-B0C33561C870}' />
+    </window>
+    <window class='dashboard' name='Dashboard Project Picture' tab-color='#4f779a'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{B6C94EEF-3C02-4762-8040-72460559C956}' />
+    </window>
+    <window class='dashboard' name='Dashboard SS 1, 2, 3' tab-color='#4f779a'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{3DA74C40-8617-41D0-A4C9-0A45E197F634}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard SS 4,5,6,7,8' tab-color='#4f779a'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{370282BC-8591-41CC-BCC5-4244688BD9FE}' />
+    </window>
+    <window class='worksheet' name='Age &amp; Anxiety with Gender' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B8D367B-78B4-4625-85AD-90B7130D414C}' />
+    </window>
+    <window class='worksheet' name='Family History &amp; Anxiety' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Anxiety Level:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADBCDF07-D185-471F-8D34-2F2173F0671C}' />
+    </window>
+    <window class='worksheet' name='Sleep &amp; Anxiety with Caffeine' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[avg:Caffeine Intake (mg/day):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8D5900C5-5F07-4A67-B10F-AE62E6E34023}' />
+    </window>
+    <window class='worksheet' name='Physical Activity &amp; Anxiety' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{55360498-ABC9-4DF8-A2FD-72FE1A2CD906}' />
+    </window>
+    <window class='worksheet' name='Diet &amp; Anxiety' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Diet Quality:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FC21FC4D-3A3F-48CE-91D0-682E83D38959}' />
+    </window>
+    <window class='worksheet' name='HR/BR &amp; Anxiety' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D70D6E6D-83E4-4605-93EC-5E0567355054}' />
+    </window>
+    <window class='worksheet' name='Alcohol and Anxiety with Smoking' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1cdkv7n1pv3u8f177m4pi0etdl3p].[none:Smoking:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8DA93B69-7394-4B9D-90C6-78FD0B0FDCA1}' />
+    </window>
+    <window class='worksheet' name='Therapy Sessions &amp; Anxiety' tab-color='#4f779a'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4419D535-564E-4DDE-AE64-991C01AA58AE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Age &amp; Anxiety with Gender' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='HR/BR &amp; Anxiety' width='192'>
+      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
+      0dFBKWcy93CVkeGBmuuJry+zmsgzPNjH/ZkpOnqHCAdrqyed3OD+0iaHDgySWFvCLPvo7W5/
+      7noqhQy3xqfw+IMcGOhrrKF4Qag3DfUUSBDqjQRAcDUSALdhlRkbG+fR4vIzv21t8R4rcbvW
+      E21cpJWzzqzNXeef/vW/+cd/+HvWVjepFNJEmzzcnpzn9Pk36IyFqJQK/NtPf8qfvXqSK4sG
+      PcEUWrSPFsNkbP4xZ08OM3N/henrH5NsGuTv/ur7/PRf/pmMJ8zhM28Syi1SCXfz4PIvyXWd
+      4GujnUwsmnzjq+d4eOcSKb2d9//9ZwydOMXoyB7uTD7g0NETLE6PYxYtKBV45Stf5p2L7/EX
+      P/jubh+yHUUCUGeuXrnF+dODjM0tc3/8KoZuUDRNDg5Gebhu0hnbeoS8cu8uv0hu0LZvlA/H
+      FwiGF3j99BHWZq5yTc9xY2qN84P96L0nn2gnzSwd7VHSy2t88uuLnNrfS9vJUf73Fz8j3Bxg
+      9cyXmHqwwsnXj3I7FEVLzvHBb+YZGj3Nuxd/RTlXQrMyjAy2MrVaRC/mKMM2Hr6+OMglUB2x
+      LIu1VJa21lYW7z+kzVegpWeI9piPS9cnSK3M8c6vb4CmMTj6Mj/6/jeJtXTQ7K3Q0dnNnetX
+      KWo6Pp+f82+8wfDIADevXwIg2tHNN796nkeL97l66Rr+YJDu/r1cuXKNvp42rECUkNegJeQj
+      kS7gI8vkoyzdMT8fv/8+/UNDRKMxYi0txKIxfAaULMvxPyDyGLQBuPrxO4zNb/KDH/45zYGd
+      PSnnzXXe+2SCb735KhowffMjfD0vsa/9Dz+8XJkfZy7u5dzJkR31s9tIAARX8/8EVRGHR6Hd
+      kwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='My Very 1st Story:)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Physical Activity &amp; Anxiety' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sleep &amp; Anxiety with Caffeine' width='192'>
+      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
+      jfdxKYezUWQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
